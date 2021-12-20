@@ -21,7 +21,7 @@ public class Candidate implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "candidate_seq_gen")
-    @SequenceGenerator(name = "candidate_seq_gen", sequenceName = "candidate_seq_gen", allocationSize = 1, initialValue = 34)
+    @SequenceGenerator(name = "candidate_seq_gen", sequenceName = "candidate_seq_gen", allocationSize = 1, initialValue = 35)
     @Column(name = "id")
     private Long id;
 

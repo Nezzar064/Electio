@@ -39,6 +39,13 @@ public class PartyRestController {
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
+    @GetMapping("/party-names")
+    public ResponseEntity<List<PartyDto>> getPartiesOnlyWithName() {
+        log.info("Request to get Parties only with name");
+        List<PartyDto> result = partyService.getPartiesOnlyWithName();
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
     @GetMapping("/parties/party-by-name")
     public ResponseEntity<PartyDto> getPartyByName(@RequestParam(value="party-name") String partyName) {
         log.info("Request to get Party by name: {}", partyName);

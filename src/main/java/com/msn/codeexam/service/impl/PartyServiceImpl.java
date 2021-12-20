@@ -57,4 +57,9 @@ public class PartyServiceImpl implements PartyService {
         convertedParty.setCandidates(candidateMapper.mapEntityListToDtoList(party.getCandidates()));
         return convertedParty;
     }
+
+    @Override
+    public List<PartyDto> getPartiesOnlyWithName() {
+        return repository.getPartyOnlyWithName().orElseThrow(() -> new DataNotFoundException("No parties present in system!"));
+    }
 }
