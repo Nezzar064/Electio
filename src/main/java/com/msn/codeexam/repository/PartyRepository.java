@@ -17,4 +17,6 @@ public interface PartyRepository extends JpaRepository<Party, Long> {
 
     @Query("SELECT p FROM Party p WHERE p.partyName = :partyName")
     Optional<Party> findPartyByPartyName(@Param("partyName") String partyName);
+
+
 }

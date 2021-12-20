@@ -15,12 +15,16 @@ public class PartyDto implements Serializable {
     private Long id;
     private String partyName;
     private String partySymbol;
-    private List<CandidateDto> partyMembers;
+    private List<CandidateDto> candidates;
 
-    public PartyDto(Long id, String partyName, String partySymbol, List<CandidateDto> partyMembers) {
+    public PartyDto(Long id, String partyName, String partySymbol, List<CandidateDto> candidates) {
         this.id = id;
         this.partyName = partyName;
         this.partySymbol = partySymbol;
-        this.partyMembers = partyMembers;
+        this.candidates = candidates;
+    }
+
+    public PartyDto(String partyName) {
+        this.partyName = partyName;
     }
 }

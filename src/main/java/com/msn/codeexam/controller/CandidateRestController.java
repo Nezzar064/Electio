@@ -2,6 +2,7 @@ package com.msn.codeexam.controller;
 
 import com.msn.codeexam.model.dto.CandidateDto;
 import com.msn.codeexam.payload.request.CandidateAddEditRequest;
+import com.msn.codeexam.payload.response.CandidateListResponse;
 import com.msn.codeexam.service.impl.CandidateServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,9 +36,9 @@ public class CandidateRestController {
     }
 
     @GetMapping("/candidates")
-    public ResponseEntity<List<CandidateDto>> getCandidates() {
+    public ResponseEntity<List<CandidateListResponse>> getCandidates() {
         log.info("Request to get Candidates");
-        List<CandidateDto> result = candidateService.findAll();
+        List<CandidateListResponse> result = candidateService.findCandidatesWithOnlyPartyName();
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 

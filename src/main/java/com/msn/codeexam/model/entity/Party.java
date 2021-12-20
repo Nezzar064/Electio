@@ -44,7 +44,7 @@ public class Party implements Serializable {
     }
 
     //Used for removing party member in OTM relationship
-    public void removePartyMember(Candidate candidate) {
+    public void removeCandidate(Candidate candidate) {
         candidates.remove(candidate);
         candidate.setParty(null);
     }
@@ -54,11 +54,11 @@ public class Party implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Party party = (Party) o;
-        return id == party.id && Objects.equals(partyName, party.partyName) && Objects.equals(candidates, party.candidates);
+        return Objects.equals(id, party.id) && Objects.equals(partyName, party.partyName) && Objects.equals(partySymbol, party.partySymbol) && Objects.equals(candidates, party.candidates);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, partyName, candidates);
+        return Objects.hash(id, partyName, partySymbol, candidates);
     }
 }

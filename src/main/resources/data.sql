@@ -26,30 +26,31 @@ INSERT INTO candidates(id, first_name, last_name, party) VALUES(14, 'Jørn C.', 
 INSERT INTO candidates(id, first_name, last_name, party) VALUES(15, 'Morten Ø.', 'Kristensen', 2);
 INSERT INTO candidates(id, first_name, last_name, party) VALUES(16, 'Susanne', 'Andersen', 2);
 INSERT INTO candidates(id, first_name, last_name, party) VALUES(17, 'Iulian V.', 'Paiu', 2);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(18, 'Per', 'Hingel', 2);
 
 -- Inserting candidates for SF, Socialistisk Folkeparti
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(18, 'Ulla', 'Holm', 3);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(19, 'Kjeld', 'Bønkel', 3);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(20, 'Anne Grethe', 'Olsen', 3);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(21, 'Lone', 'Krag', 3);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(22, 'Børge S.', 'Buur', 3);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(19, 'Ulla', 'Holm', 3);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(20, 'Kjeld', 'Bønkel', 3);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(21, 'Anne Grethe', 'Olsen', 3);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(22, 'Lone', 'Krag', 3);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(23, 'Børge S.', 'Buur', 3);
 
 -- Inserting candidates for Dansk Folkeparti
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(23, 'Per', 'Mortensen', 4);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(24, 'Per', 'Mortensen', 4);
 
 -- Inserting candidates for Venstre
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(24, 'Søren', 'Wiese', 5);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(25, 'Anita E. H.', 'Olesen', 5);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(26, 'Carsten', 'Bruun', 5);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(27, 'Mogens', 'Exner', 5);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(28, 'Anja', 'Guldborg', 5);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(29, 'Klaus', 'Holdorf', 5);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(25, 'Søren', 'Wiese', 5);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(26, 'Anita E. H.', 'Olesen', 5);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(27, 'Carsten', 'Bruun', 5);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(28, 'Mogens', 'Exner', 5);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(29, 'Anja', 'Guldborg', 5);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(30, 'Klaus', 'Holdorf', 5);
 
 -- Inserting candidates for Enhedslisten
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(30, 'Katrine Høegh', 'Mc Quaid', 6);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(31, 'Jette M.', 'Søgaard', 6);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(32, 'Søren', 'Caspersen', 6);
-INSERT INTO candidates(id, first_name, last_name, party) VALUES(33, 'Pia', 'Birkmand', 6);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(31, 'Katrine Høegh', 'Mc Quaid', 6);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(32, 'Jette M.', 'Søgaard', 6);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(33, 'Søren', 'Caspersen', 6);
+INSERT INTO candidates(id, first_name, last_name, party) VALUES(34, 'Pia', 'Birkmand', 6);
 
 
 

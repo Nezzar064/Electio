@@ -25,7 +25,7 @@ public class PartyRestController {
         this.partyService = partyService;
     }
 
-    @GetMapping("/parties/party/{id}")
+    @GetMapping("/parties/{id}")
     public ResponseEntity<PartyDto> getParty(@PathVariable Long id) {
         log.info("Request to get Party by id: {}", id);
         PartyDto result = partyService.findById(id);

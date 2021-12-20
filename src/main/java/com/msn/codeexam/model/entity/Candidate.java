@@ -46,8 +46,8 @@ public class Candidate implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Candidate that = (Candidate) o;
-        return id == that.id && Objects.equals(firstName, that.firstName) && Objects.equals(lastName, that.lastName) && Objects.equals(party, that.party);
+        Candidate candidate = (Candidate) o;
+        return Objects.equals(id, candidate.id) && Objects.equals(firstName, candidate.firstName) && Objects.equals(lastName, candidate.lastName) && Objects.equals(party, candidate.party);
     }
 
     @Override
