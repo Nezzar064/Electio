@@ -27,8 +27,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         this.authEntryPointHandler = authEntryPointHandler;
     }
 
-    @Bean
     //Used for hashing passwords
+    @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
