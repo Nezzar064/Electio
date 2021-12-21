@@ -34,19 +34,10 @@ public class Party implements Serializable {
     @ToString.Exclude
     private List<Candidate> candidates;
 
-    //Setter used for maintaining/assisting OTM relationship
-    public void setCandidates(List<Candidate> candidates) {
-        if (this.candidates == null) {
-            this.candidates = new ArrayList<>();
-        }
-        this.candidates.clear();
-        this.candidates.addAll(candidates);
-    }
-
-    //Used for removing party member in OTM relationship
-    public void removeCandidate(Candidate candidate) {
-        candidates.remove(candidate);
-        candidate.setParty(null);
+    //For Unit Test
+    public Party(Long id, String partyName) {
+        this.id = id;
+        this.partyName = partyName;
     }
 
     @Override

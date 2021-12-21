@@ -27,4 +27,10 @@ public class PartyDto implements Serializable {
     public PartyDto(String partyName) {
         this.partyName = partyName;
     }
+
+    //Used for testing
+    public PartyDto(Long id, String partyName) {
+        this.id = id;
+        this.partyName = partyName;
+    }
 }
